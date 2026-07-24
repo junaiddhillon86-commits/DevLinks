@@ -1,0 +1,487 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0D1117;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    height:65px;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom:1px solid #2d333b;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:1.5rem;
+    display:flex;
+    align-items:center;
+    gap:.4rem;
+}
+
+#D{
+    color:#8b5cf6;
+    font-size:2rem;
+}
+
+#L{
+    color:white;
+    font-size:1.3rem;
+}
+
+/* MAIN */
+
+.main{
+
+    max-width:1400px;
+    width:90%;
+
+    margin:4rem auto;
+
+    display:flex;
+    gap:2rem;
+
+    align-items:flex-start;
+
+}
+
+/* LEFT PANEL */
+
+.mleft{
+
+    flex:1;
+
+    background:#161B22;
+    color:white;
+
+    border-radius:24px;
+
+    padding:2rem;
+
+}
+
+.mleft h1{
+
+    text-align:center;
+    margin-bottom:2rem;
+
+}
+
+.nnp{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.img{
+
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+
+}
+
+.lname{
+
+    margin-bottom:30px;
+
+}
+
+/* LINKS */
+
+.links{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:1rem;
+
+    width:100%;
+
+}
+
+.link{
+
+    width:100%;
+
+    padding:15px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#1F2937;
+
+    border:1px solid #374151;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.link:hover{
+
+    background:#2563EB;
+
+    border-color:#2563EB;
+
+    transform:translateY(-2px);
+
+}
+
+/* RIGHT PANEL */
+
+.rmain{
+
+    flex:2;
+
+    background:#0F172A;
+
+    color:white;
+
+    border-radius:24px;
+
+    padding:2rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2rem;
+
+}
+
+.rmain h1{
+
+    text-align:center;
+
+}
+
+/* SECTIONS */
+
+.section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    background:#161B22;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    border:1px solid #30363D;
+
+}
+
+.section h2{
+
+    color:#F8FAFC;
+
+}
+
+.section p{
+
+    color:#94A3B8;
+
+}
+
+label{
+
+    color:#CBD5E1;
+
+    font-weight:600;
+
+}
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    background:#0D1117;
+
+    color:white;
+
+    border:1px solid #30363D;
+
+    font-size:15px;
+
+}
+
+textarea{
+
+    resize:none;
+
+    min-height:120px;
+
+}
+
+/* BUTTONS */
+
+.theme-box{
+
+    display:flex;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+}
+
+.theme-btn,
+.add-btn,
+.save-btn{
+
+    cursor:pointer;
+
+    border:none;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.theme-btn{
+
+    background:#1F2937;
+
+    color:white;
+
+    padding:12px 24px;
+
+}
+
+.theme-btn:hover{
+
+    background:#2563EB;
+
+}
+
+.add-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    background:#8B5CF6;
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+.add-btn:hover{
+
+    background:#7C3AED;
+
+}
+
+.save-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.save-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* FOOTER */
+
+.f{
+
+    margin-top:50px;
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#0F172A;
+
+    color:white;
+
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+/* Laptop */
+
+@media(max-width:1200px){
+
+.main{
+
+    width:95%;
+
+}
+
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.main{
+
+    flex-direction:column;
+
+}
+
+.mleft,
+.rmain{
+
+    width:100%;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.logo{
+
+    font-size:1.2rem;
+
+}
+
+#D{
+
+    font-size:1.6rem;
+
+}
+
+#L{
+
+    font-size:1.1rem;
+
+}
+
+.main{
+
+    margin:2rem auto;
+
+}
+
+.img{
+
+    width:100px;
+    height:100px;
+
+}
+
+.section{
+
+    padding:20px;
+
+}
+
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.main{
+
+    width:94%;
+
+}
+
+.img{
+
+    width:80px;
+    height:80px;
+
+}
+
+.link{
+
+    font-size:.9rem;
+
+}
+
+.section{
+
+    padding:16px;
+
+}
+
+input,
+textarea{
+
+    font-size:14px;
+
+}
+
+.theme-box{
+
+    flex-direction:column;
+
+}
+
+.theme-btn{
+
+    width:100%;
+
+}
+
+}
