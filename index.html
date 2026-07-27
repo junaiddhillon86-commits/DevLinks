@@ -22,7 +22,11 @@
             <div class="nnp">
                 <img class="img" src="https://i.pravatar.cc/300" alt="Profile Avatar">
                 <div class="lname">
-                    <h2>Muhammad Junaid</h2>
+                    <h2 id="n">Muhammad Junaid</h2>
+                    <p class="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur atque amet
+                        cupiditate, a explicabo eum quos odit aperiam delectus eos aliquid perspiciatis itaque veniam
+                        sapiente maiores! Quisquam illum inventore consequuntur quas, quidem possimus recusandae
+                        deserunt laboriosam itaque vero repudiandae facilis natus soluta voluptas qui molestiae?</p>
                 </div>
             </div>
 
@@ -36,67 +40,68 @@
 
         </div>
 
-       <div class="rmain">
+        <div class="rmain">
 
-    <h1>Editor</h1>
+            <h1>Editor</h1>
 
-    <div class="section">
+            <div class="section">
 
-        <h2>Profile Details</h2>
-        <p>Customize your personal information.</p>
+                <h2>Profile Details</h2>
+                <p>Customize your personal information.</p>
 
-        <label>Profile Picture</label>
-        <input type="file">
+                <label>Profile Picture</label>
+                <input type="file" id="profilePic" accept="image/*">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" class="name">
 
-        <label>Full Name</label>
-        <input type="text" placeholder="Enter your name">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" class="em">
 
-        <label>Email</label>
-        <input type="email" placeholder="Enter your email">
+                <label>Bio</label>
+                <textarea class="bioo" placeholder="Tell us about yourself"></textarea>
 
-        <label>Bio</label>
-        <textarea placeholder="Tell us about yourself"></textarea>
+            </div>
 
-    </div>
+            <div class="section">
 
-    <div class="section">
+                <h2>Links</h2>
 
-        <h2>Links</h2>
+                <label>GitHub</label>
+                <input type="url" placeholder="https://github.com/" id="gh">
 
-        <label>GitHub</label>
-        <input type="url" placeholder="https://github.com/">
+                <label>LinkedIn</label>
+                <input type="url" placeholder="https://linkedin.com/in/" id="in">
 
-        <label>LinkedIn</label>
-        <input type="url" placeholder="https://linkedin.com/in/">
+                <label>Instagram</label>
+                <input type="url" placeholder="https://Instagram.com/" id="ig">
 
-        <label>Portfolio</label>
-        <input type="url" placeholder="https://">
+                <button class="add-btn">+ Add New Link</button>
 
-        <button class="add-btn">+ Add New Link</button>
+            </div>
 
-    </div>
+            <div class="section">
 
-    <div class="section">
+                <h2>Appearance</h2>
 
-        <h2>Appearance</h2>
+                <div class="theme-box">
 
-        <div class="theme-box">
+                    <button class="theme-btn">Dark</button>
+                    <button class="theme-btn">Light</button>
 
-            <button class="theme-btn">Dark</button>
-            <button class="theme-btn">Light</button>
+                </div>
+
+            </div>
+
+            <button class="save-btn">Save Profile</button>
 
         </div>
-
-    </div>
-
-    <button class="save-btn">Save Profile</button>
-
-</div>
     </div>
 
     <footer class="f">
         &copy;Made By M jUNAID DHILLON❤️
     </footer>
+
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
